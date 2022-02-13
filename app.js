@@ -9,6 +9,9 @@ function getCaseNUmber(isIncreasing) {
     } else if (caseNumberText > 0) {
         caseNumber.value = parseInt(caseNumberText) - 1;
     }
+
+    const caseTotal = document.getElementById('case-total');
+    caseTotal.innerText = caseNumber * 59;
 }
 document.getElementById('case-plus').addEventListener("click", function() {
     getCaseNUmber(true);
